@@ -4,12 +4,12 @@ import geemap.foliumap as geemap
 import utilities as ut
         
 ####### MAIN APPLICATION #######
-c1, c2, c3 = st.columns([1,8,1]); c2.title('  Land Surface Temperature Explorer')
+c1, c2, c3 = st.columns([1,8,1]); c2.title(' Temperature Remote Sensing Explorer')
 c1, c2, c3 = st.columns([1,8,1]); 
 c2.markdown(
         """
-        An interactive web app that estimates Land Surface Temperature (LST) using [Landsat](https://developers.google.com/earth-engine/datasets/catalog/landsat) satellite data. LST is derived using the Single Mono Window (SMW) Algorithm ([Ermida et al., 2020](https://doi.org/10.3390/rs12091471)).
-        The app was built using [streamlit](https://streamlit.io), [geemap](https://geemap.org), and [Google Earth Engine](https://earthengine.google.com). 
+        An interactive web app that estimates Land Surface Temperature (LST) using [Landsat](https://developers.google.com/earth-engine/datasets/catalog/landsat) satellite data. LST is derived using the Single Mono Window (SMW) algorithm.
+        The app was built using [streamlit](https://streamlit.io), [geemap](https://geemap.org), and [Google Earth Engine](https://earthengine.google.com) on deployed on Daisi platform. 
     """
     )
 
