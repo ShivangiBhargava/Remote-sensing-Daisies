@@ -1,7 +1,7 @@
 import streamlit as st
 st.set_page_config(page_title='Temerature sensing of Earth surface', layout='wide')
 import geemap.foliumap as geemap
-import utilities as ut
+
         
 ####### MAIN APPLICATION #######
 c1, c2, c3 = st.columns([1,8,1]); c2.title(' Temperature Remote Sensing Explorer')
@@ -559,7 +559,6 @@ def addLST(landsat):
     B_img = image.remap(B_lookup.get(0), B_lookup.get(1),0.0,'TPWpos').resample('bilinear')
     C_img = image.remap(C_lookup.get(0), C_lookup.get(1),0.0,'TPWpos').resample('bilinear')
 
-    # select TIR band
     tir = ee.String(ee.Algorithms.If(landsat=='Landsat 8','B10',
                         ee.Algorithms.If(landsat=='Landsat 7','B6_VCID_1',
                         'B6')))
