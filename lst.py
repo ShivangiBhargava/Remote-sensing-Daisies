@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(page_title='Land Surface Temperature', layout='wide')
+st.set_page_config(page_title='Temerature sensing of Earth surface', layout='wide')
 import geemap.foliumap as geemap
 import utilities as ut
         
